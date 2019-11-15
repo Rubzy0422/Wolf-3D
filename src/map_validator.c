@@ -55,20 +55,19 @@ void	check3(t_list *map)
 void	check4(t_list *map)
 {
 	char	*c_content;
-	char	*c_content2;
 	t_list	*map2;
 
 	map2 = map->next;
 	while (map2->next != NULL)
 	{
 		c_content = map->content;
-		c_content2 = map2->content;
+		c_content = map2->content;
 		check4_subf(map, map2, c_content);
 		map = map->next;
 		map2 = map2->next;
 	}
 	c_content = map->content;
-	c_content2 = map2->content;
+	c_content = map2->content;
 	check4_subf(map, map2, c_content);
 }
 
